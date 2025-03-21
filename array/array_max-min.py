@@ -28,6 +28,14 @@ def arraymax_min(arr):
     min_value  = reduce(lambda a,b :a if a<b else b,arr)
 
 
+#m-4 using heaphq
+def arraymax_min_heap(arr):
+    min_value = heapq.nsmallest(1,arr)[0]
+    max_value = heapq.nlargest(1,arr)[0]
+import heapq
+
+
+
 if __name__ =="__main__":
     arr = [2,34,5,6,8]
     arraymax_min(arr)
